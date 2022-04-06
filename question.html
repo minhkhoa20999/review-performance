@@ -6,7 +6,12 @@ div {
   width: 100px;
   height: 100px;
   background-color: crimson;
+
   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  margin-left: 600px;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
   animation-name: example;
@@ -31,20 +36,30 @@ div {
   75% {background-color:lightsalmon; left:0px; top:200px;}
   100% {background-color:lightsalmon; left:0px; top:0px;}
 }
-.red {
+.no {
   background-color: lightsalmon;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  margin-top: 200px;
+  margin-left: 1000px;
   transform: translate(-50%, -50%);
 }
 
+    p.left {
+       text-align: left;
+    }
+    p.right {
+       text-align: right;
+    }
+    p.center {
+       text-align: center;
+    }
+
 </style>
 </head>
-<h2>Content 2</h2>
-<h2><div><p style="text-align: center;">Yes</p></div></h2>
-<h1 class="red"><p style="text-align: center;"><a href="end.html">No</p></h1>
+<h1><p class="center">Bạn có muốn tăng lương không ?</p></h1>
+<h2><div><p style="text-align: center;">Có</p></div></h2>
+<h1 class="no"><p style="text-align: center;"><a href="end.html">Không</p></h1>
 </body>
 </html>
